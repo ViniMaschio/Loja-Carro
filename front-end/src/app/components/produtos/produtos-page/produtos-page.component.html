@@ -1,0 +1,29 @@
+<div class="container">
+  <div>
+    <h3 class="text-center">Produtos</h3>
+    <div class="row" *ngIf="produtos$ | async as produtos; else loading">
+      <div *ngIf="produtos.length === 0">
+        <p class="text-center">Nenhum produto encontrado</p>
+      </div>
+      <div
+        class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center align-items-center"
+        *ngFor="let produto of produtos"
+      >
+        <app-produtos-list
+          [carName]="produto.modelo"
+          [description]="produto.descricao"
+          [price]="produto.preco"
+          [imageUrl]="produto.img"
+          [id]="produto.id"
+        ></app-produtos-list>
+      </div>
+    </div>
+  </div>
+  <ng-template #loading>
+    <div class="d-flex justify-content-center align-items-center">
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+  </ng-template>
+</div>

@@ -1,0 +1,14 @@
+<div
+  class="modal-body alert alert-{{ typeAlert }} alert-dismissible fade show"
+  role="alert"
+  style="margin-bottom: 0"
+>
+  {{ message }}
+  <button
+    type="button"
+    class="btn-close"
+    data-bs-dismiss="alert"
+    aria-label="Close"
+    (click)="activeModal.close('Close click')"
+  ></button>
+</div>

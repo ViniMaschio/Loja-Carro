@@ -1,0 +1,242 @@
+{
+  "cliente": [
+    {
+      "id": "1",
+      "nome": "Vinicius Ribeiro Maschio",
+      "email": "vinicius.r.maschio@hotmail.com",
+      "senha": "123456"
+    },
+    {
+      "id": "2",
+      "nome": "João",
+      "email": "joao@hotmail.com",
+      "senha": "123456"
+    },
+    {
+      "id": "4767",
+      "nome": "vinicius",
+      "email": "teste@teste.com",
+      "senha": "123456"
+    },
+    {
+      "id": "a745",
+      "nome": "roberto carlos",
+      "email": "riberto@carlos.com",
+      "senha": "135790"
+    },
+    {
+      "id": "d5c5",
+      "nome": "gustavo chupa rolinha",
+      "email": "gustavo@1234email.com",
+      "senha": "123456"
+    },
+    {
+      "id": "262e",
+      "nome": "joao",
+      "email": "joaocm25@meupiru.com",
+      "senha": "123456"
+    },
+    {
+      "id": "a394",
+      "nome": "teste",
+      "email": "teste@teste123.com",
+      "senha": "123456"
+    }
+  ],
+  "carros": [
+    {
+      "id": "1",
+      "modelo": "Ferrari",
+      "marca": "Ferrari",
+      "descricao": "Carro esportivo",
+      "preco": 10000,
+      "ano": 2020,
+      "img": "img/ferrari.jpeg"
+    },
+    {
+      "id": "2",
+      "modelo": "Limousine",
+      "marca": "Limousine",
+      "descricao": "Carro de luxo",
+      "preco": 5000,
+      "ano": 2020,
+      "img": "img/limousine.jpg"
+    },
+    {
+      "id": "3",
+      "modelo": "Fusca",
+      "marca": "Volkswagen",
+      "descricao": "Carro popular",
+      "preco": 1000,
+      "ano": 1970,
+      "img": "img/fusca.jpg"
+    },
+    {
+      "id": "4",
+      "modelo": "Camaro",
+      "marca": "Chevrolet",
+      "descricao": "Carro esportivo",
+      "preco": 2000,
+      "ano": 2010,
+      "img": "img/camaro.jpg"
+    },
+    {
+      "id": "5",
+      "modelo": "Corolla",
+      "marca": "Toyota",
+      "descricao": "Carro popular",
+      "preco": 3000,
+      "ano": 2015,
+      "img": "img/corolla.jpg"
+    },
+    {
+      "id": "6",
+      "modelo": "Uno",
+      "marca": "Fiat",
+      "descricao": "Carro popular",
+      "preco": 500,
+      "ano": 1990,
+      "img": "img/Uno.jpg"
+    },
+    {
+      "id": "7",
+      "modelo": "Gol",
+      "marca": "Volkswagen",
+      "descricao": "Carro popular",
+      "preco": 800,
+      "ano": 2000,
+      "img": "img/Gol.jpg"
+    },
+    {
+      "id": "8",
+      "modelo": "Celta",
+      "marca": "Chevrolet",
+      "descricao": "Carro popular",
+      "preco": 700,
+      "ano": 2005,
+      "img": "img/Celta.jpg"
+    },
+    {
+      "id": "9",
+      "modelo": "Palio",
+      "marca": "Fiat",
+      "descricao": "Carro popular",
+      "preco": 600,
+      "ano": 2003,
+      "img": "img/Palio.avif"
+    },
+    {
+      "id": "10",
+      "modelo": "Onix",
+      "marca": "Chevrolet",
+      "descricao": "Carro popular",
+      "preco": 900,
+      "ano": 2010,
+      "img": "img/onix.webp"
+    },
+    {
+      "id": "11",
+      "modelo": "Charrete sem cavalo",
+      "marca": "Charretinha dos crias",
+      "descricao": "Charrete sem cavalo",
+      "preco": 500,
+      "ano": 1985,
+      "img": "img/charrete-sem-cavalo.jpeg"
+    },
+    {
+      "id": "12",
+      "modelo": "Charrete com cavalo",
+      "marca": "Charretinha dos crias",
+      "descricao": "Nome cavalo mangacurta",
+      "preco": 77000,
+      "ano": 1985,
+      "img": "img/charrete-com-cavalo.jpg"
+    }
+  ],
+  "aluguel": [
+    {
+      "id": "1",
+      "produtoId": "1",
+      "clienteId": "1",
+      "qntdDias": 2,
+      "valorTotal": 20000
+    },
+    {
+      "id": "2",
+      "produtoId": "1",
+      "clienteId": "1",
+      "qntdDias": 2,
+      "valorTotal": 20000
+    },
+    {
+      "id": "3",
+      "produtoId": "1",
+      "clienteId": "1",
+      "qntdDias": 2,
+      "valorTotal": 20000
+    },
+    {
+      "id": "5",
+      "produtoId": "1",
+      "clienteId": "1",
+      "qntdDias": 5,
+      "valorTotal": 50000
+    },
+    {
+      "id": "6",
+      "produtoId": "2",
+      "clienteId": "1",
+      "qntdDias": 3,
+      "valorTotal": 15000
+    },
+    {
+      "id": "904a",
+      "produtoId": "2",
+      "clienteId": "1",
+      "qntdDias": 2,
+      "valorTotal": 10000
+    },
+    {
+      "id": "28c4",
+      "produtoId": "1",
+      "clienteId": "1",
+      "qntdDias": 1,
+      "valorTotal": 10000
+    },
+    {
+      "id": "3706",
+      "produtoId": "6",
+      "clienteId": "1",
+      "qntdDias": 4,
+      "valorTotal": 2000
+    },
+    {
+      "id": "a7cc",
+      "produtoId": "5",
+      "clienteId": "1",
+      "qntdDias": 10,
+      "valorTotal": 30000
+    },
+    {
+      "id": "d294",
+      "produtoId": "3",
+      "clienteId": "262e",
+      "qntdDias": 3,
+      "valorTotal": 3000
+    },
+    {
+      "id": "7189",
+      "produtoId": "6",
+      "clienteId": "262e",
+      "qntdDias": 4,
+      "valorTotal": 2000
+    },
+    {
+      "id": "97d3",
+      "produtoId": "11",
+      "clienteId": "1",
+      "qntdDias": 4,
+      "valorTotal": 2000
+    }
+  ]
+}

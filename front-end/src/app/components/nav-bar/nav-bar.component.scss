@@ -1,0 +1,14 @@
+.user-container {
+  @media (max-width: 991px) {
+    margin-top: 1rem;
+    width: 100%;
+    text-align: center;
+  }
+  min-width: 100px;
+}
+
+.navbar-nav {
+  @media (max-width: 991px) {
+    text-align: center;
+  }
+}

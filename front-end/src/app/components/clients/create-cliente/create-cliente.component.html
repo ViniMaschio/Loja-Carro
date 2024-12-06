@@ -1,0 +1,40 @@
+<div class="col-5">
+  <h3>Faça seu cadastro</h3>
+  <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <label for="nome" class="form-label">Nome:</label>
+      <input
+        type="text"
+        class="form-control"
+        id="nome"
+        formControlName="nome"
+        placeholder="Seu nome"
+      />
+    </div>
+    <br />
+    <div class="row">
+      <label for="email" class="form-label">Email:</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        formControlName="email"
+        placeholder="exemplo@email.com"
+      />
+    </div>
+    <br />
+    <div class="row">
+      <label for="senha" class="form-label">Senha:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="senha"
+        formControlName="senha"
+        placeholder="Sua senha"
+      />
+    </div>
+    <br />
+
+    <button type="submit" class="btn btn-primary">Cadastrar</button>
+  </form>
+</div>

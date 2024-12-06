@@ -1,0 +1,8 @@
+<div class="container">
+  <h1 class="title text-center">Meus Pedidos</h1>
+  <br />
+  <br />
+  <div *ngFor="let aluguel of aluguel$ | async">
+    <app-pedidos-form [aluguel]="aluguel"></app-pedidos-form>
+  </div>
+</div>

@@ -1,0 +1,72 @@
+<div class="aluguel-card">
+  <div class="aluguel-header">
+    <h3>Codigo Aluguel: {{ aluguel.id }}</h3>
+  </div>
+  <div class="row">
+    <div class="col-9">
+      <div class="aluguel-info" *ngIf="aluguel && produto">
+        <div class="info-row">
+          <span class="label">Produto:</span>
+          <span>{{ produto.modelo }}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Dias Alugado:</span>
+          <span>{{ aluguel.qntdDias }}</span>
+        </div>
+
+        <div class="info-row">
+          <span class="label">Valor Total:</span>
+          <span>{{ aluguel.valorTotal | currency : "BRL" }}</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="actions-row d-flex justify-content-center align-items-center">
+        <button class="btn-cancelar" (click)="confirma()">
+          <i class="fas fa-times"></i> Cancelar
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="produto-section">
+    <button class="dropdown-btn" (click)="toggleProduto()">
+      Detalhes do Produto
+      <i
+        [class]="isProdutoVisible ? 'fas fa-chevron-up' : 'fas fa-chevron-down'"
+      ></i>
+    </button>
+
+    <div class="produto-details" *ngIf="isProdutoVisible && aluguel.produtoId">
+      <div class="row">
+        <div class="col-9">
+          <div class="info-row">
+            <span class="label">modelo:</span>
+            <span>{{ produto.modelo }}</span>
+          </div>
+          <div class="info-row">
+            <span class="label">marca:</span>
+            <span>{{ produto.marca }}</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Ano:</span>
+            <span>{{ produto.ano }}</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Descricao:</span>
+            <span>{{ produto.descricao }}</span>
+          </div>
+          <div class="info-row">
+            <span class="label">Diaria:</span>
+            <span>{{ produto.preco | currency : "BRL" }}</span>
+          </div>
+        </div>
+        <div class="col-3 car-card">
+          <div class="info-row">
+            <img [src]="produto.img" alt="Imagem do carro" class="car-image" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,82 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">Loja de Carros</a>
+
+    <button
+      class="navbar-toggler"
+      type="button"
+      (click)="isMenuCollapsed = !isMenuCollapsed"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div
+      class="collapse navbar-collapse"
+      id="navbarSupportedContent"
+      [ngbCollapse]="isMenuCollapsed"
+    >
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['home']"
+            routerLinkActive="active"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['produtos']"
+            routerLinkActive="active"
+            >Produto</a
+          >
+        </li>
+      </ul>
+      <div class="user-container">
+        <div *ngIf="!isLoggedIn()">
+          <a
+            class="nav-link"
+            aria-current="page"
+            [routerLink]="['login']"
+            routerLinkActive="active"
+            >Entrar/Criar Conta</a
+          >
+        </div>
+
+        <div
+          *ngIf="isLoggedIn()"
+          ngbDropdown
+          class="d-inline-block"
+          placement="bottom-end"
+        >
+          <button
+            type="button"
+            id="dropdownBasic1"
+            class="nav-link dropdown-toggle"
+            ngbDropdownToggle
+          >
+            {{ user.name }}
+          </button>
+          <div
+            ngbDropdownMenu
+            aria-labelledby="dropdownBasic1"
+            class="text-center dropdown-menu-end"
+          >
+            <button ngbDropdownItem [routerLink]="['login/pedidos']">
+              Meus Pedidos
+            </button>
+            <button ngbDropdownItem [routerLink]="['login/cliente']">
+              Perfil
+            </button>
+            <button ngbDropdownItem (click)="closeUserSession()">Sair</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

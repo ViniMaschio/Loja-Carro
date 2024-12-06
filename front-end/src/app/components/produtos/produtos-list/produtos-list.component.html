@@ -1,0 +1,11 @@
+<div class="car-card">
+  <img [src]="imageUrl" alt="Imagem do carro" class="car-image" />
+  <div class="car-info">
+    <h3 class="car-name">{{ carName }}</h3>
+    <p class="car-description">{{ description }}</p>
+    <p class="car-price">{{ price | currency : "BRL" }}</p>
+    <button class="btn btn-primary" [routerLink]="['alugar', id]">
+      Alugar
+    </button>
+  </div>
+</div>

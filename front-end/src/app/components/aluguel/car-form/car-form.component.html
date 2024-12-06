@@ -1,0 +1,23 @@
+<div class="produto-detalhes" *ngIf="produto">
+  <img [src]="produto.img" alt="{{ produto.modelo }}" class="produto-img" />
+  <h2>{{ produto.modelo }} ({{ produto.ano }})</h2>
+  <p><strong>Marca:</strong> {{ produto.marca }}</p>
+  <p><strong>Descrição:</strong> {{ produto.descricao }}</p>
+  <p><strong>Preço por dia:</strong> {{ produto.preco | currency : "BRL" }}</p>
+
+  <div class="aluguel">
+    <label for="dias">Quantidade de dias:</label>
+    <div class="dias-controls">
+      <button (click)="alterarDias(-1)" [disabled]="dias <= 1">-</button>
+      <span>{{ dias }}</span>
+      <button (click)="alterarDias(1)">+</button>
+    </div>
+    <p><strong>Valor final:</strong> {{ valorFinal | currency : "BRL" }}</p>
+  </div>
+
+  <button (click)="confirma()">Alugar</button>
+</div>
+
+<div *ngIf="!produto">
+  <p>Carregando informações do produto...</p>
+</div>

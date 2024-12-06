@@ -1,0 +1,33 @@
+<div class="col-5">
+  <h3>Faça seu login</h3>
+  <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+    <div class="row">
+      <label for="email login">Email:</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email login"
+        aria-describedby="emailHelp"
+        placeholder="exemplo@email.com"
+        formControlName="email"
+      />
+      <small id="emailHelp" class="form-text text-muted"
+        >Nunca compartilhe seu email com alguem.</small
+      >
+    </div>
+    <br />
+    <div class="row">
+      <label for="password login">Senha:</label>
+      <input
+        type="password"
+        class="form-control"
+        id="password login"
+        placeholder="Senha"
+        formControlName="password"
+      />
+    </div>
+    <br />
+
+    <button class="btn btn-primary">Entrar</button>
+  </form>
+</div>
